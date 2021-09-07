@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fcd4029-a368-414f-89a3-16014e192f47" name="Default Changelist" comment="" />
+    <list default="true" id="4fcd4029-a368-414f-89a3-16014e192f47" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java/com/tabwu/changgou/exception/BaseExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/config/DataSourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/config/Swagger2Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common_db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common_db/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/controller/BrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/src/main/java/com/tabwu/changgou/pojo/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/src/main/java/com/tabwu/changgou/pojo/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/classes/com/tabwu/changgou/pojo/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/classes/com/tabwu/changgou/pojo/Brand.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +41,13 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/web-wu/changgou" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -64,7 +84,7 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.GoodsApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -113,4 +133,28 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="4fcd4029-a368-414f-89a3-16014e192f47" name="Default Changelist" comment="" />
       <created>1630732713185</created>
-    
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630732713185</updated>
+      <workItem from="1630732715054" duration="16214000" />
+      <workItem from="1630890005318" duration="11589000" />
+      <workItem from="1630905585950" duration="1570000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

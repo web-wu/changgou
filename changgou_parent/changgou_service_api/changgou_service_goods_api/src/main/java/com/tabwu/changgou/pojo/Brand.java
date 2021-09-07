@@ -17,9 +17,9 @@ import java.io.Serializable;
 public class Brand implements Serializable{
 
 	@ApiModelProperty(value = "品牌id",required = false)
-	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+	@Id
 	private Integer id;//品牌id
 	@ApiModelProperty(value = "品牌名称",required = false)
     @Column(name = "name")

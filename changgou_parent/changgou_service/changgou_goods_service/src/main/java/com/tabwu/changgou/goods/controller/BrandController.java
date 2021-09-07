@@ -33,7 +33,7 @@ public class BrandController {
      * @param id
      * @return
      */
-    @GetMapping("getBrandById/{id}")
+    @GetMapping("/getBrandById/{id}")
     public Result getBrandById(@PathVariable("id") Integer id) {
         Brand brand = brandService.getBrandById(id);
         return new Result(true, StatusCode.OK, MsgConstant.FIND_BRAND_SUCCESS,brand);
@@ -58,7 +58,7 @@ public class BrandController {
     @DeleteMapping("/delBrand/{id}")
     public Result delBrand(@PathVariable("id") Integer id) {
         brandService.delete(id);
-        return new Result(true, StatusCode.OK, MsgConstant.DEL_BRAND_SUCCESS,null);
+        return new Result(true, StatusCode.OK, MsgConstant.DEL_BRAND_SUCCESS);
     }
 
     /**
@@ -86,7 +86,7 @@ public class BrandController {
      * @param pageSize
      * @return
      */
-    @GetMapping("/findPage/${currentPage}/${pageSize}")
+    @GetMapping("/findPage/{currentPage}/{pageSize}")
     public Result findPage(@PathVariable("currentPage") Integer currentPage,@PathVariable("pageSize") Integer pageSize) {
         PageInfo<Brand> pageInfo = brandService.findPage(currentPage, pageSize);
         return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,pageInfo);
@@ -99,7 +99,7 @@ public class BrandController {
      * @param pageSize
      * @return
      */
-    @PostMapping("/findPageByCondition/${currentPage}/${pageSize}")
+    @PostMapping("/findPageByCondition/{currentPage}/{pageSize}")
     public Result findPage(@RequestBody Brand brand,@PathVariable("currentPage") Integer currentPage,@PathVariable("pageSize") Integer pageSize) {
         PageInfo<Brand> pageInfo = brandService.findPage(brand,currentPage,pageSize);
         return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,pageInfo);
