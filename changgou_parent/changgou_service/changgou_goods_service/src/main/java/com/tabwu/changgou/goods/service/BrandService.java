@@ -1,13 +1,13 @@
 package com.tabwu.changgou.goods.service;
 
 import com.github.pagehelper.PageInfo;
+import com.tabwu.changgou.entity.PageResult;
 import com.tabwu.changgou.pojo.Brand;
 
 
 import java.util.List;
 
 public interface BrandService {
-    List<Brand> findAll();
 
     Brand getBrandById(Integer id);
 
@@ -17,9 +17,7 @@ public interface BrandService {
 
     void update(Brand brand);
 
-    List<Brand> searchBrand(Brand brand);
+    PageResult<Brand> findPage(Integer currentPage, Integer pageSize);
 
-    PageInfo<Brand> findPage(Integer currentPage, Integer pageSize);
-
-    PageInfo<Brand> findPage(Brand brand,Integer currentPage, Integer pageSize);
+    PageResult<Brand> findPage(Brand brand,Integer currentPage, Integer pageSize);
 }

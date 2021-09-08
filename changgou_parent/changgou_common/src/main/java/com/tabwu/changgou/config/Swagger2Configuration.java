@@ -1,4 +1,4 @@
-package com.tabwu.changgou.goods.config;
+package com.tabwu.changgou.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ public class Swagger2Configuration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tabwu.changgou.goods.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.tabwu.changgou.*.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

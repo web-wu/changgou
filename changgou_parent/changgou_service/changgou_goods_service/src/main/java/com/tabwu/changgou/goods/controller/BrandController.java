@@ -1,7 +1,7 @@
 package com.tabwu.changgou.goods.controller;
 
-import com.github.pagehelper.PageInfo;
 import com.tabwu.changgou.entity.MsgConstant;
+import com.tabwu.changgou.entity.PageResult;
 import com.tabwu.changgou.entity.Result;
 import com.tabwu.changgou.entity.StatusCode;
 import com.tabwu.changgou.goods.service.BrandService;
@@ -9,7 +9,6 @@ import com.tabwu.changgou.pojo.Brand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/brand")
@@ -18,15 +17,6 @@ public class BrandController {
     @Autowired
     private BrandService brandService;
 
-    /**
-     * 查询所有 品牌
-     * @return
-     */
-    @GetMapping("/findAll")
-    public Result findall() {
-        List<Brand> brandList = brandService.findAll();
-        return new Result(true, StatusCode.OK, MsgConstant.FIND_BRAND_SUCCESS,brandList);
-    }
 
     /**
      * 根据 id 查询品牌
@@ -73,13 +63,6 @@ public class BrandController {
     }
 
 
-    @PostMapping("/search")
-    public Result searchBrand(@RequestBody Brand brand) {
-        List<Brand> brands = brandService.searchBrand(brand);
-        return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,brands);
-    }
-
-
     /**
      * 分页查询
      * @param currentPage
@@ -88,8 +71,8 @@ public class BrandController {
      */
     @GetMapping("/findPage/{currentPage}/{pageSize}")
     public Result findPage(@PathVariable("currentPage") Integer currentPage,@PathVariable("pageSize") Integer pageSize) {
-        PageInfo<Brand> pageInfo = brandService.findPage(currentPage, pageSize);
-        return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,pageInfo);
+        PageResult<Brand> pageResult = brandService.findPage(currentPage, pageSize);
+        return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,pageResult);
     }
 
     /**
@@ -101,7 +84,7 @@ public class BrandController {
      */
     @PostMapping("/findPageByCondition/{currentPage}/{pageSize}")
     public Result findPage(@RequestBody Brand brand,@PathVariable("currentPage") Integer currentPage,@PathVariable("pageSize") Integer pageSize) {
-        PageInfo<Brand> pageInfo = brandService.findPage(brand,currentPage,pageSize);
-        return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,pageInfo);
+        PageResult<Brand> pageResult = brandService.findPage(brand, currentPage, pageSize);
+        return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,pageResult);
     }
 }

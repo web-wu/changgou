@@ -5,18 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcd4029-a368-414f-89a3-16014e192f47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java/com/tabwu/changgou/exception/BaseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/config/DataSourceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/config/Swagger2Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common_db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common_db/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/src/main/java/com/tabwu/changgou/file/FileApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/src/main/java/com/tabwu/changgou/file/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/src/main/java/com/tabwu/changgou/file/utils/FdsFileInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/src/main/java/com/tabwu/changgou/file/utils/FdsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/src/main/resources/fds_client.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/controller/AlbumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/mapper/AlbumMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/AlbumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/impl/AlbumServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java/com/tabwu/changgou/entity/MsgConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java/com/tabwu/changgou/entity/MsgConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/classes/com/tabwu/changgou/entity/MsgConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/target/classes/com/tabwu/changgou/entity/MsgConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/config/Swagger2Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java/com/tabwu/changgou/config/Swagger2Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/BrandService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/controller/BrandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/target/classes/com/tabwu/changgou/goods/service/impl/BrandServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/src/main/java/com/tabwu/changgou/pojo/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/src/main/java/com/tabwu/changgou/pojo/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/classes/com/tabwu/changgou/pojo/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/classes/com/tabwu/changgou/pojo/Brand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +90,29 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.FileApplication">
+    <configuration name="FdsUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tabwu.changgou.file.utils.FdsUtil" />
+      <module name="changgou_file_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tabwu.changgou.file.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,6 +126,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tabwu.changgou.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="changgou_file_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tabwu.changgou.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tabwu.changgou.file.FileApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,6 +158,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.FileApplication" />
+        <item itemvalue="Application.FdsUtil" />
         <item itemvalue="Spring Boot.GoodsApplication" />
       </list>
     </recent_temporary>
@@ -139,6 +175,9 @@
       <workItem from="1630732715054" duration="16214000" />
       <workItem from="1630890005318" duration="11589000" />
       <workItem from="1630905585950" duration="1570000" />
+      <workItem from="1630992317316" duration="9628000" />
+      <workItem from="1631064232729" duration="5338000" />
+      <workItem from="1631071655031" duration="11206000" />
     </task>
     <servers />
   </component>

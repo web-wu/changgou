@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="changgou_common" />
         <module name="changgou_common_db" />
+        <module name="changgou_file_service" />
         <module name="changgou_eureka" />
         <module name="changgou_service_goods_api" />
         <module name="changgou_goods_service" />
@@ -17,6 +18,7 @@
       <module name="changgou_common" target="8" />
       <module name="changgou_common_db" target="8" />
       <module name="changgou_eureka" target="8" />
+      <module name="changgou_file_service" target="8" />
       <module name="changgou_gateway" target="8" />
       <module name="changgou_goods_service" target="8" />
       <module name="changgou_parent" target="8" />
@@ -31,6 +33,7 @@
       <module name="changgou_common" options="-parameters" />
       <module name="changgou_common_db" options="-parameters" />
       <module name="changgou_eureka" options="-parameters" />
+      <module name="changgou_file_service" options="-parameters" />
       <module name="changgou_gateway" options="-parameters" />
       <module name="changgou_goods_service" options="-parameters" />
       <module name="changgou_parent" options="-parameters" />

@@ -1,7 +1,8 @@
 package com.tabwu.changgou.goods.service.impl;
 
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
+import com.tabwu.changgou.entity.PageResult;
 import com.tabwu.changgou.goods.mapper.BrandMapper;
 import com.tabwu.changgou.goods.service.BrandService;
 import com.tabwu.changgou.pojo.Brand;
@@ -11,18 +12,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.List;
 
 @Service
 @Transactional
 public class BrandServiceImpl implements BrandService {
     @Autowired
     private BrandMapper brandMapper;
-
-    @Override
-    public List<Brand> findAll() {
-        return brandMapper.selectAll();
-    }
 
     @Override
     public Brand getBrandById(Integer id) {
@@ -45,23 +40,20 @@ public class BrandServiceImpl implements BrandService {
         brandMapper.updateByPrimaryKeySelective(brand);
     }
 
+
     @Override
-    public List<Brand> searchBrand(Brand brand) {
-        Example example = createExample(brand);
-        return brandMapper.selectByExample(example);
+    public PageResult<Brand> findPage(Integer currentPage, Integer pageSize) {
+        PageHelper.startPage(currentPage,pageSize);
+        Page<Brand> page = (Page<Brand>) brandMapper.selectAll();
+        return new PageResult(page.getTotal(),page.getResult());
     }
 
     @Override
-    public PageInfo<Brand> findPage(Integer currentPage, Integer pageSize) {
-        PageHelper.startPage(currentPage,pageSize);
-        return (PageInfo<Brand>) brandMapper.selectAll();
-    }
-
-    @Override
-    public PageInfo<Brand> findPage(Brand brand,Integer currentPage, Integer pageSize) {
+    public PageResult<Brand> findPage(Brand brand,Integer currentPage, Integer pageSize) {
         PageHelper.startPage(currentPage,pageSize);
         Example example = createExample(brand);
-        return (PageInfo<Brand>) brandMapper.selectByExample(example);
+        Page<Brand> page = (Page<Brand>) brandMapper.selectByExample(example);
+        return new PageResult<>(page.getTotal(),page.getResult());
     }
 
     public Example createExample(Brand brand) {
