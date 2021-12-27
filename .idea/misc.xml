@@ -4,7 +4,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/changgou_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou_parent/changgou_service/pom.xml" />
+        <option value="$PROJECT_DIR$/code-template/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_search/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="1.8" project-jdk-type="JavaSDK">

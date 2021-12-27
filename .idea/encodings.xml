@@ -4,8 +4,13 @@
     <file url="file://$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/changgou_parent/changgou_common_db/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/changgou_parent/changgou_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou_parent/changgou_gateway/gateway-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou_parent/changgou_gateway/gateway-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_file_service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_goods_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_order_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_search_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_user_service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/src/main/java" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,19 @@
+server:
+  port: 8013
+spring:
+  application:
+    name: search
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: localhost:9300
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8010/eureka/
+    register-with-eureka: true
+    fetch-registry: false
+
+

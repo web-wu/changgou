@@ -23,14 +23,22 @@ public class MsgConstant {
     public static final String Album_Add_SUCCESS = "相册添加成功";
     public static final String Album_Add_FAIL = "相册添加失败";
 
-    public static final String QUERY_SUCCESS = "相册添加失败";
-    public static final String QUERY_FAIL = "相册添加失败";
-    public static final String ADD_SUCCESS = "相册添加失败";
+    public static final String QUERY_SUCCESS = "相册查询成功";
+    public static final String QUERY_FAIL = "相册查询失败";
+    public static final String ADD_SUCCESS = "相册添加成功";
     public static final String ADD_FAIL = "相册添加失败";
-    public static final String UPDATE_SUCCESS = "相册添加失败";
-    public static final String UPDATE_FAIL = "相册添加失败";
-    public static final String DELETE_SUCCESS = "相册添加失败";
-    public static final String DELETE_FAIL = "相册添加失败";
+    public static final String UPDATE_SUCCESS = "相册更新成功";
+    public static final String UPDATE_FAIL = "相册跟新失败";
+    public static final String DELETE_SUCCESS = "相册删除成功";
+    public static final String DELETE_FAIL = "相册删除失败";
+
+    public static final String GOODS_AUDIT_SUCCESS = "商品审核成功";
+    public static final String GOODS_AUDIT_FAIL = "商品审核失败";
+    public static final String GOODS_DELETE_SUCCESS = "商品删除失败";
+    public static final String GOODS_DELETE_FAIL = "商品删除失败";
+    public static final String GOODS_DELETE = "商品已被删除";
+    public static final String GOODS_MARKETTABLE_SUCCESS = "商品上架成功";
+    public static final String GOODS_MARKETTABLE_FAIL = "商品上架失败";
 
 
 }

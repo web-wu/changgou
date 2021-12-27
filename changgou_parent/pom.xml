@@ -16,6 +16,8 @@
         <module>changgou_eureka</module>
         <module>changgou_common</module>
         <module>changgou_common_db</module>
+<!--        <module>changgou_search</module>-->
+<!--        <module>changgou_search_service</module>-->
     </modules>
 
     <parent>
@@ -57,6 +59,12 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.0</version>
         </dependency>
 
         <!--

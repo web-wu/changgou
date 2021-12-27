@@ -36,8 +36,9 @@ public class AlbumServiceImpl implements AlbumService {
     }
 
     @Override
-    public Album findOne(Integer id) {
-        return albumMapper.selectByPrimaryKey(id);
+    public Album findOne(Long id) {
+        Album album = albumMapper.selectByPrimaryKey(id);
+        return album;
     }
 
     @Override

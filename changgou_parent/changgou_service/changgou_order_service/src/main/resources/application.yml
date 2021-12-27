@@ -1,0 +1,30 @@
+server:
+  port: 8016
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/changgou_order?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: innosen
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: order-service
+  redis:
+    host: localhost
+    port: 6379
+
+mybatis:
+  type-aliases-package: com.tabwu.changgou.order.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8010/eureka
+    register-with-eureka: true
+    fetch-registry: true

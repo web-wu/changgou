@@ -55,9 +55,9 @@ public class AlbumController {
      * @return
      */
     @GetMapping("/findOne/{id}")
-    public Result findOne(@PathVariable("id") Integer id) {
+    public Result findOne(@PathVariable("id") Long id) {
         Album album = albumService.findOne(id);
-        return new Result(true,StatusCode.OK,MsgConstant.QUERY_SUCCESS);
+        return new Result(true,StatusCode.OK,MsgConstant.QUERY_SUCCESS, album);
     }
 
     /**

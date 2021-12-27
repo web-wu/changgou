@@ -1,6 +1,5 @@
 package com.tabwu.changgou.goods.service;
 
-import com.github.pagehelper.PageInfo;
 import com.tabwu.changgou.entity.PageResult;
 import com.tabwu.changgou.pojo.Brand;
 
@@ -20,4 +19,6 @@ public interface BrandService {
     PageResult<Brand> findPage(Integer currentPage, Integer pageSize);
 
     PageResult<Brand> findPage(Brand brand,Integer currentPage, Integer pageSize);
+
+    List<Brand> findByCategoryId(Integer id);
 }

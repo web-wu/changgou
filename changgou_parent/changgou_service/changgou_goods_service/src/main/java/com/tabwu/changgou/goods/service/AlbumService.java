@@ -11,7 +11,7 @@ public interface AlbumService {
 
     void updateAlbum(Album album);
 
-    Album findOne(Integer id);
+    Album findOne(Long id);
 
     PageResult findAll(Integer currentPage, Integer pageSize);
 

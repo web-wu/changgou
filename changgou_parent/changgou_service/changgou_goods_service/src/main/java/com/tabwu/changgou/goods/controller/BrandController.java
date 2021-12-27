@@ -9,6 +9,8 @@ import com.tabwu.changgou.pojo.Brand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/brand")
@@ -86,5 +88,16 @@ public class BrandController {
     public Result findPage(@RequestBody Brand brand,@PathVariable("currentPage") Integer currentPage,@PathVariable("pageSize") Integer pageSize) {
         PageResult<Brand> pageResult = brandService.findPage(brand, currentPage, pageSize);
         return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,pageResult);
+    }
+
+    /**
+     * 根据 分类id 查询品牌
+     * @param id
+     * @return
+     */
+    @GetMapping("/findByCategoryId/{id}")
+    public Result findByCategoryId(@PathVariable("id") Integer id) {
+        List<Brand> brands = brandService.findByCategoryId(id);
+        return new Result(true,StatusCode.OK,MsgConstant.FIND_BRAND_SUCCESS,brands);
     }
 }
